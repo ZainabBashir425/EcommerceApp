@@ -117,7 +117,7 @@ td {
   
   .listCart .item {
     display: grid;
-    grid-template-columns: 70px 150px 50px 1fr;
+    grid-template-columns: 60px 140px 60px 1fr;
     gap: 7px;
     text-align: center;
     padding: 10px;
