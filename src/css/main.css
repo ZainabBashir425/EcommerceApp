@@ -1,0 +1,96 @@
+.slider {
+    margin:1rem;
+    position: relative; /* Ensure buttons stay within the slider */
+  }
+.slider img{
+    width: 100%;
+    height:70vh;
+}
+  
+  #prev {
+    position: absolute;
+    height: 70vh;
+    border: none;
+    padding: 1rem;
+    font-size: 7rem;
+    color: rgb(149, 128, 128);
+    background-color: transparent;
+    left: 0; /* Position to the left */
+  }
+  
+  #next {
+    position: absolute;
+    color: rgb(149, 128, 128);
+    font-size: 7rem;
+    height: 70vh;
+    padding: 1rem;
+    right: 0; /* Position to the right */
+    border: none;
+    background-color: transparent;
+  }
+  
+  /* Media query for mobile view (max-width: 600px) */
+  @media (max-width: 440px) {
+    /* Hide the buttons in mobile view */
+    #prev, #next {
+      display: none;
+    }
+  
+    /* .slider {
+      width: 100vw;
+      height: 70vh;
+      margin: 0;
+    } */
+    .slider{
+        margin: 1rem 0 0 0;
+    }
+   .slider img{
+       padding: 0;
+       width: 100vw;
+       height:20vh;
+   }
+  
+    /* .slider img {
+      width: auto; /* Let the width be auto to maintain aspect ratio */
+      /* height: 100%; Maintain height */
+      /* object-fit: contain; Ensure the image fits well */
+    /* } */ 
+  }
+  
+.my2{
+    margin: 20px 13px;
+    font-weight: 500;
+}
+.my1{
+    margin: 5px 0;
+}
+.text-center{
+    text-align: center;
+}
+.card{
+    margin: 37px auto;
+    border: none;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #969dba;
+    text-decoration: none;
+    margin: 10px 15px;
+}
+.card-item img{
+    padding-bottom: 10px;
+}
+.card-item h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 10px;
+    text-decoration: none !important; 
+}

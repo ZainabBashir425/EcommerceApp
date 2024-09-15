@@ -1,0 +1,310 @@
+
+h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    align-items: center;
+}
+.left-filter{
+    display:flex;
+    align-items: center;
+    font-size: 18px;
+    color: gray;
+}
+.left-filter button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 2px 15px;
+    height: 35px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.left-filter p{
+    padding-top: 12px;
+}
+.filters button svg{
+    padding-right: 4px;
+}
+.right-filter{
+    display:flex;
+    align-items: center;    
+    font-size: 18px;
+}
+.right-filter button{
+    padding: 2px;
+    margin-left: 6px;
+    outline: none;
+    background-color: white;
+    border: none;
+    width: auto;
+    font-size: 17px;
+}
+.right-filter button i{
+    font-size: 14px;
+}
+.sort-container{
+    position: absolute;
+    top: 95%;
+    background-color: #f1e0e0;
+    padding-left: 10px;
+    justify-content: start !important;
+    border-radius: 20px;
+    /* visibility: hidden; */
+    width: 200px;
+}
+.sort-options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sort-options li {
+    margin: 10px 0;
+}
+
+.sort-options input[type="radio"] {
+    display: none;
+}
+
+.sort-options label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.sort-options label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.sort-options input[type="radio"]:checked + label:before {
+    border-color: #333;
+}
+
+.sort-options input[type="radio"]:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.filter-section {
+    margin: 20px 0;
+    position: sticky;
+    top: 15%;
+    height: 100vh;
+    transition: opacity 0.3s ease;
+}
+.filter-section .close-btn{
+    display: none;
+}
+
+.filter-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filter-item {
+    border-top: 1px solid gray;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.filter-item h4 {
+    margin: 0;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-content {
+    margin-top: 10px;
+}
+
+.checkbox-group {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checkbox-group li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff; /* Black background */
+    border: 1px solid black; /* Remove the border */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 2px; /* Optional: for slightly rounded corners */
+    position: relative;
+}
+.checkbox-group input[type="checkbox"]:checked{
+    background-color: #333;
+}
+.checkbox-group input[type="checkbox"]:checked:before {
+    content: "\2713"; /* Checkmark symbol */
+    color: #fff; /* White checkmark */
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the checkmark */
+}
+.price-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-info span{
+    color: black;
+    font-size: 16px;
+}
+/* Container for price range input fields */
+.price-range {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative; /* Ensure the container is positioned */
+  }
+  
+  /* Styling for the number input fields */
+  .price-range input[type="number"] {
+    width: 100px; /* Adjust width as needed */
+    padding: 5px 5px 5px 10px; /* Adjust padding to fit currency symbol */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right; /* Align text to the right */
+    font-size: 16px; /* Adjust font size for better readability */
+    position: relative; /* Ensure currency symbol is positioned relative to this input */
+  }
+  
+  /* Styling for currency symbol */
+  .price-range .currency-symbol {
+    position: absolute;
+    left: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px; /* Adjust size to match input text */
+    color: #333; /* Adjust color as needed */
+  }
+  
+
+  .price-slider {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .rc-slider {
+    width: 100%;
+  }
+  
+  .rc-slider-rail {
+    height: 4px;
+    background: rgb(207, 197, 197) !important;
+  }
+  
+  .rc-slider-track {
+    background: #333 !important;
+    height: 4px;
+  }
+  
+  .rc-slider-handle {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #333 !important;
+    border-radius: 50%;
+    box-shadow: none !important;
+    cursor: pointer;
+    margin-top: -8px; /* Half of the thumb height */
+    /* Webkit specific style */
+    -webkit-appearance: none;
+  }
+  
+  /* For Firefox */
+  .rc-slider-handle:focus {
+    outline: none;
+  }
+  
+
+.price-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+@media (max-width: 450px) {
+    .left-filter{
+        padding-right: 0;
+    }
+    .left-filter p{
+        display: none;
+    }
+    .left-filter button{
+        margin-right: 0;
+    }
+    .right-filter{
+        padding-left: 0;
+    }
+    .filter-section {
+        position: fixed;
+        left: -100%; /* Hidden by default */
+        top: -5%;
+        width: 100%;
+        height: 120vh;
+        background-color: #fff;
+        z-index: 1000;
+        transition: left 0.3s ease;
+        padding: 20px;
+      }
+    
+      /* Show the filter when active */
+      .filter-section.show {
+        left: 0; /* Slide in from the left */
+      }
+    
+      /* Close button */
+      .filter-section .close-btn {
+        font-size: 24px;
+        cursor: pointer;
+        display: block;
+      }
+    
+      /* Make second column full width */
+      .col-12 {
+        width: 100%;
+      }
+}

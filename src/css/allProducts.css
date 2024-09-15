@@ -1,0 +1,10 @@
+.productCard{
+    height: 450px;
+}
+.product-container {
+    transition: width 0.3s ease;
+    position: relative;
+  }
+  .productCard h4{
+    height: 50px;
+  }

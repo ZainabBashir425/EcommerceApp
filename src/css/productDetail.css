@@ -1,0 +1,38 @@
+.productDImg {
+  height: 80svh;
+  width: 100%;
+}
+.product-info {
+  height: 80vh;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-info p {
+  font-size: 1.25rem;
+}
+.dplus,
+.dminus {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  cursor: pointer;
+  text-align: center;
+}
+.product-quantity {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.15rem;
+}
+@media (max-width:450px){
+  .productDImg {
+    height: 25svh;
+  }
+  .product-info {
+    height: 32vh;
+  }
+}
