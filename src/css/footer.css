@@ -38,7 +38,7 @@
     border: 2px solid #969dba;
     border-right: none;
     outline: none;
-    width: 300px;
+    width: 100%;
 }
 .subscribe button{
     background-color: #969dba;
