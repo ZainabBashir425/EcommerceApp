@@ -66,7 +66,7 @@ td {
 
 /* cart */
 .cartTab {
-    width: 50%;
+    width: 40%;
     background-color: white;
     color: black;
     position: fixed;
@@ -112,13 +112,13 @@ td {
   }
   
   .listCart .item img {
-    width: 100%;
+    width: 80%;
   }
   
   .listCart .item {
     display: grid;
     grid-template-columns: 70px 150px 50px 1fr;
-    gap: 10px;
+    gap: 7px;
     text-align: center;
     padding: 10px;
     align-items: center;

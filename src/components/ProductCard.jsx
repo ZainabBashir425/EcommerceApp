@@ -24,7 +24,7 @@ export default function ProductCard({ product }) {
         <Link to={`/productDetail/${product.id}`}>
         <img src={product.image} alt={product.name} height="60%" width="100%"/>
         </Link>
-          <h4 className="mt-1">{product.name}</h4>
+          <h4 className="my-2">{product.name}</h4>
           <p>Rs. {product.price}</p>
           <button className="btn btn-outline-dark rounded-0 w-75" onClick={handleAddToCart} >
             Add to Cart
