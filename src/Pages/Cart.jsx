@@ -18,8 +18,8 @@ export default function Cart() {
           <h2>
             Subtotal: <span class="amount">Rs. {subtotal}</span>
           </h2>
-          <div class="CheckBtn">
-            <button className="btn btn-outline-dark rounded-0 w-25">
+          <div>
+            <button className="btn CheckBtn btn-outline-dark rounded-0 w-25">
               Check out
             </button>
           </div>

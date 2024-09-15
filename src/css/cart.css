@@ -213,5 +213,8 @@ td {
         gap: 0.5rem;
         padding: 0;
     }
+    .CheckBtn{
+      width: 30% !important;
+    }
 
 }
