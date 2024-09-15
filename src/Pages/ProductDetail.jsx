@@ -45,7 +45,7 @@ export default function ProductDetail() {
             />
           </div>
           <div className="col-lg-5 product-info">
-            <h1 className="mb-2">{product.name}</h1>
+            <h1 className="mb-2 mt-3">{product.name}</h1>
             <p className="mb-1 lh-1">{product.description}</p>
             <p className="m-0">Rs.{product.price}</p>
             <div className="product-quantity mb-3">

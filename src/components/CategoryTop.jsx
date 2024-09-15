@@ -18,7 +18,7 @@ export default function CategoryTop({ category, showFilters, toggleFilters, sele
     <div className="container mt-5">
       <h1>{category}</h1>
       <div className="filters row">
-        <div className="left-filter col-5">
+        <div className="left-filter col-4">
           <button
             className="btn btn-outline-dark rounded-0"
             onClick={toggleFilters}
@@ -71,7 +71,7 @@ export default function CategoryTop({ category, showFilters, toggleFilters, sele
           </button>
           <p>{productsCount} Results</p>
         </div>
-        <div className="right-filter col-7 justify-content-end">
+        <div className="right-filter col-8 justify-content-end">
           <button onClick={toggleSortOptions}>
             Sort: {selectedSortOption}{" "}
             <i
