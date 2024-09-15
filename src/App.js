@@ -1,6 +1,5 @@
 
 import './App.css';
-// import CartTab from './components/CartTab';
 import Footer from './components/Footer';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Header from './components/Header';
@@ -17,7 +16,7 @@ import Makeup from './Pages/Makeup';
 import { CartProvider } from './components/CartContext';
 function App() {
   return (
-    <CartProvider> {/* Wrap Router with CartProvider */}
+    <CartProvider> 
       <div className="App">
         <Router>
           <Header />

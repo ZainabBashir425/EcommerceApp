@@ -68,7 +68,7 @@ export default function Footer() {
             <h4 className="col-lg-6 col-12">
               Subscribe for store updates and discounts
             </h4>
-            <div className="email col-lg-6 col-12" id="subscribe-form">
+            <div className="email col-lg-6 col-11" id="subscribe-form">
               {!isPending && !isSuccess && (
                 <input
                   type="email"
