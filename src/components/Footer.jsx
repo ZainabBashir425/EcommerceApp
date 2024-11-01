@@ -5,6 +5,8 @@ import easyImg from "../Images/Easy_returns.png";
 import highlyImg from "../Images/Highly-rated.png";
 import custCareImg from "../Images/247_Customer_Care.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { db } from "../firebase";
+import { doc, setDoc } from "firebase/firestore";
 import {
   faFacebook,
   faXTwitter,
@@ -25,10 +27,14 @@ export default function Footer() {
   function isValidEmail(email) {
     return email.trim() !== ""; // Add more validation if necessary
   }
+  async function saveUserDetails(email) {
+    const userRef = doc(db, "users", email); // Assuming "users" collection
+    await setDoc(userRef, { email }); // Save email; add other fields if needed
+  }
 
   const handleFormSubmit = async () => {
     setIsPending(true);
-    await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate API call
+    await saveUserDetails(email); // Save user email
     setIsSuccess(true);
     setIsPending(false);
   };

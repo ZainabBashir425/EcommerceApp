@@ -14,6 +14,8 @@ import Cart from './Pages/Cart';
 import Main from './Pages/Main';
 import Makeup from './Pages/Makeup';
 import { CartProvider } from './components/CartContext';
+import Checkout from './components/Checkout';
+import Payment from './components/Payment';
 function App() {
   return (
     <CartProvider> 
@@ -31,6 +33,8 @@ function App() {
             <Route path="/personal" element={<Personal />} />
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/productDetail/:id" element={<ProductDetail />} />
+            <Route path='/checkout' element={<Checkout/>} />
+            <Route path='/payment' element={<Payment/>} />
           </Routes>
           <Footer />
         </Router>

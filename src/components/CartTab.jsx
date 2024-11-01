@@ -1,14 +1,19 @@
 import React from "react";
 import "../css/cart.css";
 import { useCart } from "../components/CartContext";
+import {useNavigate} from 'react-router-dom';
 
 export default function CartTab({ cartVisible, toggleCart }) {
   const { cartItems, updateQuantity} = useCart();
+  const navigate = useNavigate();
   const handleQuantityChange = (id, delta) => {
     updateQuantity(id, delta);
   };
+  const checkoutPage =()=>{
+    navigate("/checkout")
+}
   return (
-    <div class={`cartTab ${cartVisible ? "show" : ""}`}>
+    <div className={`cartTab ${cartVisible ? "show" : ""}`}>
       <h1>Shopping Cart</h1>
       <div className="listCart">
         {cartItems.map(item => (
@@ -26,11 +31,11 @@ export default function CartTab({ cartVisible, toggleCart }) {
           </div>
         ))}
       </div>
-      <div class="btns">
-        <button class="close" onClick={toggleCart}>
+      <div className="btns">
+        <button className="close" onClick={toggleCart}>
           CLOSE
         </button>
-        <button class="checkOut">Check Out</button>
+        <button className="checkOut" onClick={checkoutPage}>Check Out</button>
       </div>
     </div>
   );

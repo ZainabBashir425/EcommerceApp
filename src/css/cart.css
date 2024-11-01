@@ -110,6 +110,10 @@ td {
     background-color: black;
     color: white;
   }
+  .checkOut{
+    text-decoration: none;
+    color: #fff;
+  }
   
   .listCart .item img {
     width: 80%;
